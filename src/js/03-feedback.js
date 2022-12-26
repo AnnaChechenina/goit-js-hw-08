@@ -8,7 +8,7 @@ const refs = {
 
 const LOCALSTORAGE_KEY = 'feedback-form-state';
 const formData = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)) || {};
-
+getFormOutput();
 refs.form.addEventListener('input', throttle(onSaveInput, 500));
 refs.form.addEventListener('submit', onSubmitForm);
 
