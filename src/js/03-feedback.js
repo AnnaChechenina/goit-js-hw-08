@@ -24,6 +24,7 @@ function onSubmitForm(event) {
 }
 
 function onSaveInput(event) {
+  event.preventDefault();
   const userMessage = event.target.value;
   const userEmail = event.target.name;
   formData[userEmail] = userMessage;
